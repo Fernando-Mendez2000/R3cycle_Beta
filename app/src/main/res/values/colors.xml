@@ -7,7 +7,10 @@
 
     <!-- We can add colors here, please note what they are used for as below -->
     <color name="light_green">#BAFC9B</color>  <!-- Background color -->
+    <color name="green">#9CE07C</color>
+    <color name="dark_green">#8DCD6F</color>
     <color name="dark_blue">#003399</color>    <!-- Title text color -->
     <color name="light_blue">#6699ff</color>   <!-- Reduce and Reuse text color -->
     <color name="white">#FFFFFF</color> <!-- Button Main Page color -->
+    <color name="black">#000000</color>
 </resources>
