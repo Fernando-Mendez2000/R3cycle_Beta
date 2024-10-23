@@ -1,80 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
     android:background="@color/light_green">
 
+    <!-- Dark Green Bar (top) -->
     <LinearLayout
-        android:id="@+id/titleLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:gravity="center_vertical">
+        android:id="@+id/topDarkBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/dark_green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
 
-        <TextView
-            android:id="@+id/titleText"
+    <!-- Lighter Green Bar -->
+    <LinearLayout
+        android:id="@+id/topLightGreenBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
+
+    <!-- Main Content Section -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_green">
+
+        <!-- Title Layout -->
+        <LinearLayout
+            android:id="@+id/titleLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resources"
-            android:textSize="24sp"
-            android:layout_marginEnd="8dp" />
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
 
-        <ImageView
-            android:id="@+id/resourcesIcon"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resources"
+                android:textSize="24sp"
+                android:textColor="@color/dark_blue"
+                android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:id="@+id/resourcesIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_resources" />
+
+        </LinearLayout>
+
+        <!-- Encyclopedia Button -->
+        <Button
+            android:id="@+id/encyclopediaButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_resources" />
+            android:text="Encyclopedia"
+            android:drawableEnd="@drawable/ic_next_icon"
+            android:drawablePadding="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/titleLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_button_with_border"
+            android:textColor="@android:color/black" />
 
-    </LinearLayout>
+        <!-- Education Button -->
+        <Button
+            android:id="@+id/educationButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:drawableEnd="@drawable/ic_next_icon"
+            android:drawablePadding="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/encyclopediaButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/rounded_button_with_border"
+            android:textColor="@android:color/black" />
 
-    <Button
-        android:id="@+id/encyclopediaButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Encyclopedia"
-        android:drawableEnd="@drawable/ic_next_icon"
-        android:drawablePadding="8dp"
-        android:paddingEnd="16dp"
-        app:layout_constraintTop_toBottomOf="@id/titleLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_button_background"
-        android:textColor="@android:color/black" />
+        <!-- Terms of Use Button -->
+        <Button
+            android:id="@+id/termsOfUseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Terms of Use"
+            android:drawableEnd="@drawable/ic_next_icon"
+            android:drawablePadding="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/educationButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/rounded_button_with_border"
+            android:textColor="@android:color/black" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/educationButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Education"
-        android:drawableEnd="@drawable/ic_next_icon"
-        android:drawablePadding="8dp"
-        android:paddingEnd="16dp"
-        app:layout_constraintTop_toBottomOf="@id/encyclopediaButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_button_background"
-        android:textColor="@android:color/black" />
+    <!-- Lighter Green Bar -->
+    <LinearLayout
+        android:id="@+id/bottomLightGreenBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
 
-    <Button
-        android:id="@+id/termsOfUseButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Terms of Use"
-        android:drawableEnd="@drawable/ic_next_icon"
-        android:drawablePadding="8dp"
-        android:paddingEnd="16dp"
-        app:layout_constraintTop_toBottomOf="@id/educationButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_button_background"
-        android:textColor="@android:color/black" />
+    <!-- Dark Green Bar (bottom) -->
+    <LinearLayout
+        android:id="@+id/bottomDarkBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/dark_green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
