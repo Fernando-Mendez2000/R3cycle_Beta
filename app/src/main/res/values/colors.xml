@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- We can add colors here, please note what they are used for as below -->
+    <color name="light_green">#BAFC9B</color>  <!-- Background color -->
+    <color name="dark_blue">#003399</color>    <!-- Title text color -->
+    <color name="light_blue">#6699ff</color>   <!-- Reduce and Reuse text color -->
+    <color name="white">#FFFFFF</color> <!-- Button Main Page color -->
+</resources>
