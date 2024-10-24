@@ -49,7 +49,7 @@
                 android:id="@+id/titleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Resources"
+                android:text="@string/resources"
                 android:textSize="24sp"
                 android:textColor="@color/dark_blue"
                 android:layout_marginEnd="8dp" />
@@ -63,43 +63,46 @@
         </LinearLayout>
 
         <!-- Encyclopedia Button -->
+
+        <!-- Education Button -->
         <Button
             android:id="@+id/encyclopediaButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Encyclopedia"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_button_with_border"
             android:drawableEnd="@drawable/ic_next_icon"
             android:drawablePadding="8dp"
             android:paddingEnd="16dp"
-            app:layout_constraintTop_toBottomOf="@id/titleLayout"
-            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/encyclopedia"
+            android:textColor="@android:color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/rounded_button_with_border"
-            android:textColor="@android:color/black" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleLayout" />
 
-        <!-- Education Button -->
+        <!-- Terms of Use Button -->
         <Button
             android:id="@+id/educationButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Education"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/rounded_button_with_border"
             android:drawableEnd="@drawable/ic_next_icon"
             android:drawablePadding="8dp"
             android:paddingEnd="16dp"
-            app:layout_constraintTop_toBottomOf="@id/encyclopediaButton"
-            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/education"
+            android:textColor="@android:color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="45dp"
-            android:background="@drawable/rounded_button_with_border"
-            android:textColor="@android:color/black" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/encyclopediaButton" />
 
-        <!-- Terms of Use Button -->
         <Button
             android:id="@+id/termsOfUseButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Terms of Use"
+            android:text="@string/terms_of_use"
             android:drawableEnd="@drawable/ic_next_icon"
             android:drawablePadding="8dp"
             android:paddingEnd="16dp"
