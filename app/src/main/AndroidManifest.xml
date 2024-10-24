@@ -22,9 +22,13 @@
             </intent-filter>
         </activity>
 
+        <!-- As we continue to update, we must ensure we add the activity here for it to work
+        and not crash -->
+
         <activity android:name=".ScannerActivity" />
         <activity android:name=".ResourcesActivity" />
         <activity android:name=".CommunityActivity" />
+        <activity android:name=".TermsActivity" />
 
     </application>
 
