@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">R3cycle Beta</string>
+    <string name="r3cycle">R3cycle</string>
+    <string name="community">Community</string>
+    <string name="created_by_students">Created by Students</string>
+    <string name="reduce">Reduce</string>
+    <string name="resources">Resources</string>
+    <string name="reuse">Reuse</string>
+    <string name="scanner">Scanner</string>
 </resources>
