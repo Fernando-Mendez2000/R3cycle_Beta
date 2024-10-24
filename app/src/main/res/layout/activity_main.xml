@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="R3cycle"
+            android:text="@string/r3cycle"
             android:textColor="@color/dark_blue"
             android:textSize="32sp" />
 
@@ -54,7 +54,7 @@
                 android:id="@+id/reduceText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Reduce"
+                android:text="@string/reduce"
                 android:textColor="@color/light_blue"
                 android:layout_marginEnd="16dp" />
 
@@ -68,7 +68,7 @@
                 android:id="@+id/reuseText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Reuse"
+                android:text="@string/reuse"
                 android:textColor="@color/light_blue"
                 android:layout_marginStart="16dp" />
         </LinearLayout>
@@ -82,7 +82,7 @@
             android:drawableEnd="@drawable/ic_scanner"
             android:drawablePadding="8dp"
             android:paddingEnd="20dp"
-            android:text="Scanner"
+            android:text="@string/scanner"
             android:textColor="@android:color/black" />
 
         <Button
@@ -94,7 +94,7 @@
             android:drawableEnd="@drawable/ic_resources"
             android:drawablePadding="8dp"
             android:paddingEnd="20dp"
-            android:text="Resources"
+            android:text="@string/resources"
             android:textColor="@android:color/black" />
 
         <Button
@@ -107,7 +107,7 @@
             android:drawableEnd="@drawable/ic_community"
             android:drawablePadding="8dp"
             android:paddingEnd="20dp"
-            android:text="Community"
+            android:text="@string/community"
             android:textColor="@android:color/black" />
     </LinearLayout>
 
@@ -118,7 +118,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
-        android:text="Created by Students"
+        android:text="@string/created_by_students"
         android:textColor="@android:color/black" />
 
     <!-- Lighter Green Bar -->
