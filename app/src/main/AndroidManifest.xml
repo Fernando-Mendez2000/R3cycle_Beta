@@ -28,7 +28,8 @@
         <activity android:name=".ScannerActivity" />
         <activity android:name=".ResourcesActivity" />
         <activity android:name=".CommunityActivity" />
-        <activity android:name=".TermsActivity" />
+        <activity android:name=".TermsActivity"/>
+
 
     </application>
 
