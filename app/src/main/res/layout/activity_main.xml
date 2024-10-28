@@ -3,98 +3,140 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/light_green"
-    android:padding="16dp">
+    android:padding="0dp"
+    android:background="@color/light_green">
 
-    <!-- Title Text: R3cycle -->
-    <TextView
-        android:id="@+id/titleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="@string/r3cycle"
-        android:textColor="@color/dark_blue"
-        android:textSize="32sp" />
-
-    <!-- Subtitle: Reduce Reuse -->
+    <!-- Dark Green Bar (top) -->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:id="@+id/topDarkBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/dark_green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
+
+    <!-- Lighter Green Bar -->
+    <LinearLayout
+        android:id="@+id/topLightGreenBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
+
+    <!-- Main Menu Section (current light green background) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginTop="10dp">
+        android:background="@color/light_green"
+        android:padding="16dp">
 
         <TextView
-            android:id="@+id/reduceText"
+            android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="@string/reduce"
-            android:textColor="#1565C0" />
+            android:layout_marginBottom="4dp"
+            android:text="@string/r3cycle"
+            android:textColor="@color/dark_blue"
+            android:textSize="32sp" />
 
-        <ImageView
-            android:id="@+id/recycleIcon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:contentDescription="@null"
-            android:src="@drawable/recycle_icon" />
-
-        <TextView
-            android:id="@+id/reuseText"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/reuse"
-            android:textColor="#1565C0" />
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/reduceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reduce"
+                android:textColor="@color/light_blue"
+                android:layout_marginEnd="16dp" />
+
+            <ImageView
+                android:id="@+id/recycleIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/recycle_icon" />
+
+            <TextView
+                android:id="@+id/reuseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reuse"
+                android:textColor="@color/light_blue"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/scannerButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/rounded_button_with_border"
+            android:drawableEnd="@drawable/ic_scanner"
+            android:drawablePadding="8dp"
+            android:paddingEnd="20dp"
+            android:text="@string/scanner"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/resourcesButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/rounded_button_with_border"
+            android:drawableEnd="@drawable/ic_resources"
+            android:drawablePadding="8dp"
+            android:paddingEnd="20dp"
+            android:text="@string/resources"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/communityButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/rounded_button_with_border"
+            android:drawableEnd="@drawable/ic_community"
+            android:drawablePadding="8dp"
+            android:paddingEnd="20dp"
+            android:text="@string/community"
+            android:textColor="@android:color/black" />
     </LinearLayout>
-
-    <!-- Scanner Button -->
-    <Button
-        android:id="@+id/scannerButton"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/rounded_button_with_border"
-        android:drawableEnd="@drawable/ic_scanner"
-        android:drawablePadding="8dp"
-        android:paddingEnd="16dp"
-        android:text="@string/scanner"
-        android:textColor="@android:color/black" />
-
-    <Button
-        android:id="@+id/resourcesButton"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/rounded_button_with_border"
-        android:drawableEnd="@drawable/ic_resources"
-        android:drawablePadding="8dp"
-        android:paddingEnd="8dp"
-        android:text="@string/resources"
-        android:textColor="@android:color/black" />
-
-    <Button
-        android:id="@+id/communityButton"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="140dp"
-        android:background="@drawable/rounded_button_with_border"
-        android:drawableEnd="@drawable/ic_community"
-        android:drawablePadding="8dp"
-        android:paddingEnd="8dp"
-        android:text="@string/community"
-        android:textColor="@android:color/black" />
-
 
     <!-- Footer: Created by Students -->
     <TextView
         android:id="@+id/footerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
         android:text="@string/created_by_students"
-        android:textColor="#616161" />
+        android:textColor="@android:color/black" />
+
+    <!-- Lighter Green Bar -->
+    <LinearLayout
+        android:id="@+id/bottomLightGreenBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
+
+    <!-- Dark Green Bar (bottom) -->
+    <LinearLayout
+        android:id="@+id/bottomDarkBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/dark_green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
 
 </LinearLayout>

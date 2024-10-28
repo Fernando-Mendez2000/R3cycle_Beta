@@ -7,4 +7,14 @@
     <string name="resources">Resources</string>
     <string name="reuse">Reuse</string>
     <string name="scanner">Scanner</string>
+    <string name="encyclopedia">Encyclopedia</string>
+    <string name="education">Education</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="terms_title">R3cycle</string>
+    <string name="terms_text">    In Accordance with city of Orlando we promise to adhere to all safety
+        protocols in line with the guidelines laid out to use by the local government.
+        If there should be any breach of this contract, R3cycle is therefore held responsible along
+        with any involved parties.</string>
+    <string name="city_of_orlando">City of Orlando</string>
+
 </resources>
