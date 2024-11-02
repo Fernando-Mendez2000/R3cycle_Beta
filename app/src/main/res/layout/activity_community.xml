@@ -77,15 +77,17 @@
         android:id="@+id/homeButton"
         android:layout_width="411dp"
         android:layout_height="76dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="656dp"
         android:background="@drawable/rounded_button_background"
         android:drawableStart="@drawable/left_arrow"
+        android:drawablePadding="8dp"
+        android:paddingStart="20dp"
         android:text="Main menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.964" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -119,7 +121,7 @@
             android:background="@drawable/green_rounded_button"
             android:drawableEnd="@drawable/next_page"
             android:drawablePadding="8dp"
-            android:paddingEnd="20dp"
+            android:padding="20dp"
             android:text="about us"
             android:textColor="@android:color/black" />
 
