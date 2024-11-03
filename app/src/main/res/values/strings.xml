@@ -21,5 +21,11 @@
         and ethical waste disposal is extremely harmful to both the environment and human health. This app aims
         to be a step  in a long process for Orlando’s citizens and government to become proactive on these economical
         issues to solve.</string>
+    <string name="home">Home</string>
+    <string name="cardboard">Cardboard</string>
+    <string name="glass">Glass</string>
+    <string name="metal">Metal</string>
+    <string name="paper">Paper</string>
+    <string name="plastics">Plastics</string>
 
 </resources>
