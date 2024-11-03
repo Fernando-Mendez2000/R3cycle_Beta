@@ -16,5 +16,11 @@
         If there should be any breach of this contract, R3cycle is therefore held responsible along
         with any involved parties.</string>
     <string name="city_of_orlando">City of Orlando</string>
+    <string name="home">Home</string>
+    <string name="cardboard">Cardboard</string>
+    <string name="glass">Glass</string>
+    <string name="metal">Metal</string>
+    <string name="paper">Paper</string>
+    <string name="plastics">Plastics</string>
 
 </resources>
