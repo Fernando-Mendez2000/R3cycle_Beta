@@ -32,7 +32,8 @@
         <activity android:name=".AboutActivity"/>
         <activity android:name=".RateActivity"/>
         <activity android:name=".ReportActivity"/>
-
+        <activity android:name=".EncyclopediaActivity"/>
+        <activity android:name=".EducationActivity"/>
 
     </application>
 

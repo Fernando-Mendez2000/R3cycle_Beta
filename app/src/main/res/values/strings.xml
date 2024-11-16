@@ -21,6 +21,12 @@
         and ethical waste disposal is extremely harmful to both the environment and human health. This app aims
         to be a step  in a long process for Orlando’s citizens and government to become proactive on these economical
         issues to solve.</string>
+    <string name="educationtext">General Info: It is imperative that everyone recycles, especially with the
+        increased waste that causes landfills and pollutes the ocean.
+        </string>
+    <string name="educationtext2">Recycling materials can lower the amount
+        of pollution, therefore preserving nature’s health and in turn the population’s health as well.</string>
+    <string name="educationtext3">Locations: A good website to start is Earth 911 and any recycling centers near your area.</string>
     <string name="home">Home</string>
     <string name="cardboard">Cardboard</string>
     <string name="glass">Glass</string>
