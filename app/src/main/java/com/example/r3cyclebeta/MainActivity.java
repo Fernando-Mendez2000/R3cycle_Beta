@@ -18,12 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize buttons
         scannerButton = findViewById(R.id.scannerButton);
         resourcesButton = findViewById(R.id.resourcesButton);
         communityButton = findViewById(R.id.communityButton);
 
-        // Set listeners for buttons
         scannerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

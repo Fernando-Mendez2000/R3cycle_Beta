@@ -16,12 +16,7 @@ public class RateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rate);
 
-// Initialize buttons
         communityback = findViewById(R.id.communityback);
-
-
-
-        // Set listeners for buttons
         communityback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

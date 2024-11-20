@@ -8,9 +8,6 @@
     android:background="@color/light_green"
     tools:context=".TermsActivity">
 
-    <!-- Orlando Logo, adjust alpha for visibility -->
-
-    <!-- Title -->
     <ImageView
         android:id="@+id/orlandoLogoBackground"
         android:layout_width="match_parent"
@@ -37,8 +34,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
 
-    <!-- Terms of Use -->
-
 
     <TextView
         android:id="@+id/termsOfUseLabel"
@@ -53,7 +48,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
 
-    <!-- Text -->
 
     <TextView
         android:id="@+id/termsText"
@@ -79,6 +73,8 @@
         android:layout_marginTop="112dp"
         android:background="@drawable/rounded_button_with_border"
         android:text="@string/resources"
+        android:drawableStart="@drawable/ic_next_icon_reversed"
+        android:paddingStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
