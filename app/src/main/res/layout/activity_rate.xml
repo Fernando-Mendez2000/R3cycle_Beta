@@ -7,54 +7,60 @@
     android:background="@color/light_green">
 
 
-    <Button
-        android:id="@+id/communityback"
-        android:layout_width="411dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="656dp"
-        android:background="@drawable/rounded_button_background"
-        android:drawableStart="@drawable/left_arrow"
-        android:drawablePadding="8dp"
-        android:paddingStart="20dp"
-        android:text="Community"
+
+    <LinearLayout
+        android:id="@+id/topDarkBar1"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="@color/dark_green"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/topbar1"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/topDarkBar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottombar1"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bottomDarkBar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomDarkBar1"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="@color/dark_green"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="129dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="R3cycle"
         android:textColor="@color/light_blue"
         android:textSize="35sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/top" />
-
-    <LinearLayout
-        android:id="@+id/topDarkBar1"
-        android:layout_width="413dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="88dp"
-        android:background="@color/dark_green"
-        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/topbar1"
-        android:layout_width="413dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="108dp"
-        android:background="@color/green"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/topbar1" />
 
     <Button
         android:id="@+id/top"
@@ -70,32 +76,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/topDarkBar"
-        android:layout_width="413dp"
-        android:layout_height="23dp"
-        android:layout_marginBottom="76dp"
-        android:background="@color/dark_green"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/topbar"
-        android:layout_width="413dp"
-        android:layout_height="23dp"
-        android:layout_marginBottom="96dp"
-        android:background="@color/green"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="228dp"
-        android:layout_marginEnd="84dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -103,8 +89,8 @@
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="250dp"
         android:layout_height="145dp"
-        android:layout_marginTop="384dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="80dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
@@ -115,8 +101,8 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="180dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="176dp"
         android:text="Leave a Review:"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,14 +110,20 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="268dp"
-        android:background="@drawable/rounded_button_background"
+        android:layout_width="191dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_button_with_border"
+        android:drawablePadding="8dp"
+        android:paddingEnd="0dp"
         android:text="Submit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
