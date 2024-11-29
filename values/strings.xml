@@ -1,0 +1,45 @@
+<resources>
+    <!-- Existing string resources -->
+    <string name="app_name">R3cycle Beta</string>
+    <string name="r3cycle">R3cycle</string>
+    <string name="community">Community</string>
+    <string name="created_by_students">Created by Students</string>
+    <string name="reduce">Reduce</string>
+    <string name="resources">Resources</string>
+    <string name="reuse">Reuse</string>
+    <string name="scanner">Scanner</string>
+    <string name="encyclopedia">Encyclopedia</string>
+    <string name="education">Education</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="terms_title">R3cycle</string>
+    <string name="terms_text">In Accordance with the city of Orlando, we promise to adhere to all safety
+        protocols in line with the guidelines laid out by the local government.
+        If there is any breach of this contract, R3cycle is therefore held responsible along
+        with any involved parties.</string>
+    <string name="city_of_orlando">City of Orlando</string>
+    <string name="about_us">We encourage Orlando to become a more economically friendly environment.
+        Due to the rise of industrialization and expansion, the lack of preserving nature, litter prevention,
+        and ethical waste disposal is extremely harmful to both the environment and human health. This app aims
+        to be a step in a long process for Orlando’s citizens and government to become proactive on these
+        environmental issues.</string>
+    <string name="educationtext">General Info: It is imperative that everyone recycles, especially with the
+        increased waste that causes landfills and pollutes the ocean.</string>
+    <string name="educationtext2">Recycling materials can lower the amount
+        of pollution, therefore preserving nature’s health and in turn the population’s health as well.</string>
+    <string name="educationtext3">Locations: A good website to start is Earth 911 and any recycling centers near your area.</string>
+    <string name="home">Home</string>
+    <string name="cardboard">Cardboard</string>
+    <string name="glass">Glass</string>
+    <string name="metal">Metal</string>
+    <string name="paper">Paper</string>
+    <string name="plastics">Plastics</string>
+
+    <!-- Added missing string resources for button labels -->
+    <string name="report_bugs">Report Bugs</string>
+    <string name="rate_this_app">Rate This App</string>
+    <string name="product_name">Product: %1$s</string>
+    <string name="packaging_details">Packaging: %1$s</string>
+
+    <!-- New About Us button label -->
+    <string name="about_us_button">About Us</string>
+</resources>
