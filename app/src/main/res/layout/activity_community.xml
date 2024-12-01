@@ -14,6 +14,9 @@
         android:orientation="horizontal"
         android:paddingStart="80dp"
         android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
 
@@ -44,8 +47,9 @@
         android:layout_margin="0dp"
         android:background="@color/dark_green"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="696dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
@@ -55,53 +59,61 @@
         android:layout_margin="0dp"
         android:background="@color/green"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="660dp"
+        app:layout_constraintBottom_toTopOf="@+id/topDarkBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/aboutusButton"
         android:layout_width="375dp"
         android:layout_height="66dp"
-        android:layout_marginTop="244dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/rounded_button_with_border"
         android:drawableEnd="@drawable/next_page"
         android:drawablePadding="8dp"
         android:padding="20dp"
         android:text="about us"
         android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/reportBugsButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/reportBugsButton"
         android:layout_width="374dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="64dp"
         android:background="@drawable/rounded_button_with_border"
         android:drawableEnd="@drawable/next_page"
         android:drawablePadding="8dp"
         android:paddingEnd="20dp"
         android:text="Report Bugs"
         android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ratethisappButton"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="370dp" />
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/ratethisappButton"
         android:layout_width="374dp"
         android:layout_height="65dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="96dp"
         android:background="@drawable/rounded_button_with_border"
         android:drawableEnd="@drawable/next_page"
         android:drawablePadding="8dp"
         android:paddingEnd="20dp"
         android:text="Rate This App"
         android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/topLightGreenBar"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="492dp"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
@@ -109,10 +121,13 @@
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_margin="0dp"
+        android:layout_marginTop="12dp"
         android:background="@color/green"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="102dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomDarkBar"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
@@ -122,8 +137,10 @@
         android:layout_margin="0dp"
         android:background="@color/dark_green"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout"
         tools:ignore="MissingConstraints" />
 
 

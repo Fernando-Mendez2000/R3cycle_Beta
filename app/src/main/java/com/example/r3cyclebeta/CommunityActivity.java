@@ -1,5 +1,6 @@
 package com.example.r3cyclebeta;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,24 +14,17 @@ public class CommunityActivity extends AppCompatActivity {
     private Button reportBugsButton;
     private Button ratethisappButton;
 
-    private Button homeButton;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_community);
-
-
 
         // Initialize buttons
         aboutusButton = findViewById(R.id.aboutusButton);
         reportBugsButton = findViewById(R.id.reportBugsButton);
         ratethisappButton = findViewById(R.id.ratethisappButton);
-        homeButton = findViewById(R.id.homeButton);
 
-
-
-// Set listeners for buttons
+        // Set listeners for buttons
         aboutusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,25 +45,5 @@ public class CommunityActivity extends AppCompatActivity {
                 startActivity(new Intent(CommunityActivity.this, RateActivity.class));
             }
         });
-        homeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(CommunityActivity.this, MainActivity.class));
-            }
-        });
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
 }
