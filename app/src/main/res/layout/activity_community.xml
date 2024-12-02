@@ -1,141 +1,142 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_green">
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@color/light_green"
+    tools:context=".CommunityActivity">
 
-
-    <Button
-        android:id="@+id/top"
-        android:layout_width="438dp"
-        android:layout_height="81dp"
-        android:background="@drawable/rounded_button_background"
-        android:drawableStart="@drawable/ic_community"
-        android:drawablePadding="0dp"
+    <!-- Title Layout -->
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/rounded_button_left_sqaured_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingStart="80dp"
-        android:text="Community"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:paddingEnd="16dp">
 
+        <ImageView
+            android:id="@+id/communityIcon"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/community"
+            android:src="@drawable/ic_community" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:gravity="center_vertical"
+            android:text="@string/community"
+            android:textColor="@color/dark_blue"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- Top Dark Bar -->
     <LinearLayout
         android:id="@+id/topDarkBar"
-        android:layout_width="413dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
         android:background="@color/dark_green"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
 
+    <!-- Top Light Green Bar -->
     <LinearLayout
         android:id="@+id/topLightGreenBar"
-        android:layout_width="422dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
         android:background="@color/green"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
 
-    <LinearLayout
-        android:id="@+id/bottomDarkBar"
-        android:layout_width="420dp"
-        android:layout_height="23dp"
-        android:layout_marginBottom="76dp"
-        android:background="@color/dark_green"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+    <!-- Constraint Layout to Center the Buttons Vertically -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_green">
 
-    </LinearLayout>
+        <!-- About Us Button -->
+        <Button
+            android:id="@+id/aboutusButton"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_button_with_border"
+            android:drawableEnd="@drawable/next_page"
+            android:drawablePadding="8dp"
+            android:paddingEnd="16dp"
+            android:text="@string/about_us_button"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/homeButton"
-        android:layout_width="411dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="656dp"
-        android:background="@drawable/rounded_button_background"
-        android:drawableStart="@drawable/left_arrow"
-        android:drawablePadding="8dp"
-        android:paddingStart="20dp"
-        android:text="Main menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        <!-- Report Bugs Button -->
+        <Button
+            android:id="@+id/reportBugsButton"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_button_with_border"
+            android:drawableEnd="@drawable/next_page"
+            android:drawablePadding="8dp"
+            android:paddingEnd="16dp"
+            android:text="@string/report_bugs"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/aboutusButton" />
 
+        <!-- Rate This App Button -->
+        <Button
+            android:id="@+id/ratethisappButton"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_button_with_border"
+            android:drawableEnd="@drawable/next_page"
+            android:drawablePadding="8dp"
+            android:paddingEnd="16dp"
+            android:text="@string/rate_this_app"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reportBugsButton" />
 
-    <TextView
-        android:id="@+id/titleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="156dp"
-        android:text="@string/r3cycle"
-        android:textColor="@color/dark_blue"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/aboutusButton"
-        android:layout_width="375dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="288dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/green_rounded_button"
-        android:drawableEnd="@drawable/next_page"
-        android:drawablePadding="8dp"
-        android:padding="20dp"
-        android:text="about us"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/reportBugsButton"
-        android:layout_width="374dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/green_rounded_button"
-        android:drawableEnd="@drawable/next_page"
-        android:drawablePadding="8dp"
-        android:paddingEnd="20dp"
-        android:text="Report Bugs"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/top" />
-
-    <Button
-        android:id="@+id/ratethisappButton"
-        android:layout_width="374dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="492dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/green_rounded_button"
-        android:drawableEnd="@drawable/next_page"
-        android:drawablePadding="8dp"
-        android:paddingEnd="20dp"
-        android:text="Rate This App"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/top" />
-
+    <!-- Bottom Light Green Bar -->
     <LinearLayout
         android:id="@+id/bottomLightGreenBar"
-        android:layout_width="418dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="96dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
         android:background="@color/green"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
 
-    </LinearLayout>
+    <!-- Bottom Dark Green Bar -->
+    <LinearLayout
+        android:id="@+id/bottomDarkBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/dark_green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -49,7 +49,7 @@
         android:layout_height="66dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="92dp"
-        android:background="@drawable/green_rounded_button"
+        android:background="@drawable/rounded_button_with_border"
         android:drawableStart="@drawable/next_page2"
         android:drawablePadding="8dp"
         android:paddingEnd="20dp"

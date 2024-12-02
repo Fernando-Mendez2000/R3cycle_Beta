@@ -14,12 +14,25 @@ public class ResourcesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_resources);
 
         Button termsOfUseButton = findViewById(R.id.termsOfUseButton);
+        Button encyclopediaButton = findViewById(R.id.encyclopediaButton);
+        Button educationButton = findViewById(R.id.educationButton);
 
         termsOfUseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ResourcesActivity.this, TermsActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(ResourcesActivity.this, TermsActivity.class));
+            }
+        });
+        encyclopediaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ResourcesActivity.this, EncyclopediaActivity.class));
+            }
+        });
+        educationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ResourcesActivity.this, EducationActivity.class));
             }
         });
     }
