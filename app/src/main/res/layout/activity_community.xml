@@ -68,7 +68,6 @@
         android:id="@+id/aboutusButton"
         android:layout_width="375dp"
         android:layout_height="66dp"
-        android:layout_marginTop="92dp"
         android:layout_marginBottom="72dp"
         android:background="@drawable/rounded_button_with_border"
         android:drawableEnd="@drawable/next_page"
@@ -80,7 +79,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/bottomLightGreenBar"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/reportBugsButton"

@@ -83,6 +83,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Submit button renamed to Report Bugs -->
     <Button
         android:id="@+id/button2"
         android:layout_width="191dp"
@@ -93,13 +94,13 @@
         android:background="@drawable/rounded_button_with_border"
         android:drawablePadding="8dp"
         android:paddingEnd="0dp"
-        android:text="Submit"
+        android:text="Report Bugs"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        android:onClick="reportBugs"/>
 
     <TextView
         android:id="@+id/textView1"
@@ -112,6 +113,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
