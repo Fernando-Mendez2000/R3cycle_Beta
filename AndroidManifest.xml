@@ -40,6 +40,11 @@
         <activity android:name=".EncyclopediaActivity" />
         <activity android:name=".EducationActivity" />
         <activity android:name=".ProductDetailsActivity"/>
+        <activity android:name=".PaperActivity"/>
+        <activity android:name=".CardboardActivity"/>
+        <activity android:name=".GlassActivity"/>
+        <activity android:name=".PlasticsActivity"/>
+        <activity android:name=".MetalActivity"/>
 
     </application>
 
