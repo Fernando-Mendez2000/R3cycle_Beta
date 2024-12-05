@@ -31,6 +31,11 @@
         android:textSize="20sp" />
 
     <!-- Background -->
+
+    <!-- Lighter Green Bar -->
+
+    <!-- Back Button -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -70,24 +75,23 @@
             android:layout_marginStart="19dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="80dp"
-            android:layout_marginBottom="20dp"
             android:text="@string/plasticsnum"
-            app:layout_constraintBottom_toTopOf="@+id/tissueBox"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/carton"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclableText2" />
+            app:layout_constraintTop_toBottomOf="@+id/recyclableText2"
+            app:layout_constraintVertical_bias="0.104" />
 
         <TextView
             android:id="@+id/tissueBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="19dp"
-            android:layout_marginEnd="141dp"
-            android:layout_marginBottom="18dp"
             android:text="@string/plasticcups"
-            app:layout_constraintBottom_toTopOf="@+id/heavyFolder"
-            app:layout_constraintEnd_toStartOf="@+id/paperCup"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.28"
+            tools:layout_editor_absoluteX="16dp" />
 
         <TextView
             android:id="@+id/heavyFolder"
@@ -95,18 +99,19 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="129dp"
-            android:layout_marginBottom="140dp"
+            android:layout_marginBottom="444dp"
             android:text="@string/milkcontainer"
-            app:layout_constraintBottom_toTopOf="@+id/nonrecyclable"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/books"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/carton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="107dp"
-            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginBottom="40dp"
             android:text="@string/soapjug"
             app:layout_constraintBottom_toTopOf="@+id/paperCup"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -115,8 +120,8 @@
             android:id="@+id/paperCup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="70dp"
-            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="44dp"
             android:text="@string/foodcontainers"
             app:layout_constraintBottom_toTopOf="@+id/books"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -125,10 +130,10 @@
             android:id="@+id/books"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="92dp"
-            android:layout_marginBottom="198dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="444dp"
             android:text="@string/sodabottles"
-            app:layout_constraintBottom_toTopOf="@+id/textView24"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
@@ -136,13 +141,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="140dp"
+            android:layout_marginTop="388dp"
             android:layout_marginEnd="231dp"
             android:text="@string/nonrecyclable"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/heavyFolder" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView21"
@@ -162,8 +168,8 @@
             android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="21dp"
-            android:layout_marginBottom="191dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="164dp"
             android:text="@string/plasticcut"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -172,17 +178,13 @@
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="66dp"
-            android:layout_marginBottom="228dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="224dp"
             android:text="@string/foamcontainers"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Lighter Green Bar -->
-
-    <!-- Back Button -->
 
     <LinearLayout
         android:id="@+id/bottomLightGreenBar"

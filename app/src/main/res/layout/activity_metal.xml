@@ -106,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="61dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginEnd="12dp"
             android:layout_marginBottom="18dp"
             android:text="@string/metalbev"
             app:layout_constraintBottom_toTopOf="@+id/paperCup"
@@ -117,8 +117,8 @@
             android:id="@+id/paperCup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="31dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
             android:text="@string/metalfood"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/carton" />
@@ -127,8 +127,8 @@
             android:id="@+id/books"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="83dp"
-            android:layout_marginBottom="198dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="224dp"
             android:text="@string/aluminumfoil"
             app:layout_constraintBottom_toTopOf="@+id/textView24"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -158,14 +158,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView24"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nonrecyclable" />
+            app:layout_constraintTop_toBottomOf="@+id/nonrecyclable"
+            app:layout_constraintVertical_bias="0.271" />
 
         <TextView
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="132dp"
-            android:layout_marginBottom="228dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginBottom="312dp"
             android:text="@string/paintcan"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView21" />

@@ -36,4 +36,64 @@
     <string name="product_name">Product: %1$s</string>
     <string name="packaging_details">Packaging: %1$s</string>
 
+    <string name="recyclable">Recyclable:</string>
+    <string name="nonrecyclable">NOT Recyclable:</string>
+    <string name="paperboard">Paperboard</string>
+    <string name="tissuebox">Tissue Boxes</string>
+    <string name="folders">Heavy Weight Folders</string>
+    <string name="rolls">Paper Towel / Toilet Paper Rolls</string>
+    <string name="shredded">Shredded Paper</string>
+    <string name="carton">Empty Milk Cartons</string>
+    <string name="papercups">Paper Cups</string>
+    <string name="books">Soft Cover Books</string>
+    <string name="officepaper">Office Paper</string>
+    <string name="newspaper">Newspaper</string>
+    <string name="papertowel">Paper Towels</string>
+    <string name="waxpaper">Wax Paper</string>
+    <string name="wrappingpaper">Wrapping Paper</string>
+    <string name="tissuepaper">Tissue Paper</string>
+    <string name="napkins">Napkins</string>
+    <string name="pizzabox">Pizza Box</string>
+    <string name="corrrugated">Corrugated Cardboard</string>
+    <string name="paperbag">Brown Paper Bag</string>
+    <string name="boxboard">Box Board</string>
+    <string name="bubblewrap">Bubble Wrap Boxes</string>
+    <string name="waxbox">Wax/Waterproof Boxes</string>
+    <string name="clear">Clear Glass</string>
+    <string name="green">Green Glass</string>
+    <string name="brown">Brown Glass</string>
+    <string name="blue">Blue Glass</string>
+    <string name="wine">Wine/Beer Bottles</string>
+    <string name="containers">Glass Food Containers</string>
+    <string name="lightbulbs">Lightbulbs</string>
+    <string name="mirrors">Mirror Glass</string>
+    <string name="window">Window Glass</string>
+    <string name="ceramic">Ceramics</string>
+    <string name="crystal">Crystal</string>
+    <string name="plasticsnum">Plastics Numbers 1–7</string>
+    <string name="plasticcups">Plastic Cups</string>
+    <string name="milkcontainer">Milk Container</string>
+    <string name="soapjug">Soap Jugs</string>
+    <string name="grocerybags">Grocery Bags</string>
+    <string name="sodabottles">Soda Bottles</string>
+    <string name="foodcontainers">Food Containers</string>
+    <string name="plasticbag">Plastic Baggies</string>
+    <string name="plasticcut">Plastic Cutlery</string>
+    <string name="foamcontainers">Foam Containers</string>
+    <string name="alumtakeout">Aluminum Take Out Containers</string>
+    <string name="alumtray">Aluminum Plates/Trays</string>
+    <string name="cookware">Kitchen Cookware</string>
+    <string name="metalbev">Metal Beverage Containers</string>
+    <string name="metalfood">Metal Food Containers</string>
+    <string name="aluminumfoil">Aluminum Foil</string>
+    <string name="motoroil">Motor Oil Cans</string>
+    <string name="paintcan">Paint Cans</string>
+
+    <!-- Added missing string resources for button labels -->
+    <string name="report_bugs">Report Bugs</string>
+    <string name="rate_this_app">Rate This App</string>
+
+    <!-- New About Us button label -->
+    <string name="about_us_button">About Us</string>
 </resources>
+
