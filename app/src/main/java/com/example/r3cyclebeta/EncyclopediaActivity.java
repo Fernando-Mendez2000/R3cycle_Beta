@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class EncyclopediaActivity extends AppCompatActivity {
@@ -13,22 +14,46 @@ public class EncyclopediaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_encyclopedia);
 
-        // Initialize buttons
-        Button mainButton = findViewById(R.id.homeBackButton);
-        Button resourcesBackButton = findViewById(R.id.resourcesBackButton);
+        //initialize buttons
+        Button paperButton = findViewById(R.id.paperButton);
+        Button cardboardButton = findViewById(R.id.cardboardButton);
+        Button glassButton = findViewById(R.id.glassButton);
+        Button plasticsButton = findViewById(R.id.plasticsButton);
+        Button metalButton = findViewById(R.id.metalButton);
 
-        // Set listeners for buttons
-        mainButton.setOnClickListener(new View.OnClickListener() {
+        //set listeners for buttons
+        paperButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EncyclopediaActivity.this, MainActivity.class));
+                startActivity(new Intent(EncyclopediaActivity.this, PaperActivity.class));
             }
         });
 
-        resourcesBackButton.setOnClickListener(new View.OnClickListener() {
+        cardboardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EncyclopediaActivity.this, ResourcesActivity.class));
+                startActivity(new Intent(EncyclopediaActivity.this, CardboardActivity.class));
+            }
+        });
+
+        glassButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EncyclopediaActivity.this, GlassActivity.class));
+            }
+        });
+
+        plasticsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EncyclopediaActivity.this, PlasticsActivity.class));
+            }
+        });
+
+        metalButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EncyclopediaActivity.this, MetalActivity.class));
             }
         });
     }

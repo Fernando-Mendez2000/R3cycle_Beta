@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@color/light_green">
+
+    <!-- Lighter Green Bar -->
+
+    <LinearLayout
+        android:id="@+id/topLightGreenBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/green"
+        android:layout_margin="0dp"
+        android:orientation="horizontal" />
+
+    <!-- Main Content Section -->
+
+    <!-- Resources Button -->
+    <Button
+        android:id="@+id/plasticsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_button_left_sqaured_background"
+        android:drawableStart="@drawable/book"
+        android:text="@string/cardboard"
+        android:textSize="20sp" />
+
+    <!-- Background -->
+
+    <!-- Lighter Green Bar -->
+
+    <!-- Back Button -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_green">
+
+        <TextView
+            android:id="@+id/recyclableText2"
+            android:layout_width="115dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="280dp"
+            android:text="@string/recyclable"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recyclableText"
+            android:layout_width="115dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="280dp"
+            android:text="@string/recyclable"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/paperboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="158dp"
+            android:text="@string/pizzabox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/carton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclableText2"
+            app:layout_constraintVertical_bias="0.144" />
+
+        <TextView
+            android:id="@+id/tissueBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="79dp"
+            android:layout_marginBottom="177dp"
+            android:text="@string/corrrugated"
+            app:layout_constraintBottom_toTopOf="@+id/nonrecyclable"
+            app:layout_constraintEnd_toStartOf="@+id/paperCup"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/carton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="446dp"
+            android:text="@string/paperbag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/paperCup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginBottom="235dp"
+            android:text="@string/boxboard"
+            app:layout_constraintBottom_toTopOf="@+id/textView24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carton" />
+
+        <TextView
+            android:id="@+id/nonrecyclable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="231dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/nonrecyclable"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginBottom="228dp"
+            android:text="@string/bubblewrap"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="228dp"
+            android:text="@string/waxbox"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLightGreenBar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="0dp"
+        android:background="@color/green"
+        android:orientation="horizontal" />
+
+    <!-- Dark Green Bar (bottom) -->
+
+</LinearLayout>
